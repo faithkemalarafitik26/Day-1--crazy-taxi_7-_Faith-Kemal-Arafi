@@ -37,3 +37,4 @@ D. Git dan GitHub
 Mempelajari penggunaan Git untuk mengelola perubahan file dan GitHub sebagai tempat penyimpanan repository secara online. Beberapa perintah dasar yang dipelajari adalah git add, git commit, git push, dan git clone.
 
 tes
+tes
