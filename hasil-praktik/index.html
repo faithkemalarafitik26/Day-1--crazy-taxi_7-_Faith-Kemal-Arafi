@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Day 1</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #121a30;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h2 {
+            color: #77e0c3;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: #77e0c3;
+        }
+
+        .hero p {
+            color: #aab7d1;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        button {
+            background: #77e0c3;
+            color: #0b1020;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            margin-top: 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 50px 10%;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #77e0c3;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #18233d;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #aab7d1;
+        }
+
+        .pendapat {
+            background: #18233d;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #121a30;
+            color: #aab7d1;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>FAITH KEMAL WORKSHOP</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#materi">Materi</a>
+            <a href="#pendapat">Pendapat</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Welcome to <span>Workshop Day 1</span></h1>
+
+        <p>
+            Dokumentasi kegiatan workshop mahasiswa
+            Teknik Informatika Politeknik Negeri Jakarta.
+        </p>
+
+        <button onclick="tampilkanPesan()">
+            Klik Saya
+        </button>
+    </div>
+
+    <section id="materi">
+        <h2>Materi Workshop</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <h3>🎓 Pengenalan Akademik TIK</h3>
+                <p>
+                    Mempelajari visi, misi, dan arah pengembangan
+                    Jurusan Teknologi Informasi dan Komputer.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📚 MBKM dan MSIB</h3>
+                <p>
+                    Mengenal kesempatan belajar melalui magang,
+                    pertukaran pelajar, dan studi independen.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🤖 Prompt Engineering</h3>
+                <p>
+                    Mempelajari cara membuat instruksi yang tepat
+                    kepada Artificial Intelligence (AI).
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Git dan GitHub</h3>
+                <p>
+                    Memahami cara menyimpan, mengelola,
+                    dan memperbarui proyek secara online.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="pendapat">
+        <h2>Pendapat Pribadi</h2>
+
+        <div class="pendapat">
+            <p>
+                Menurut saya, kegiatan workshop Day 1 sangat
+                bermanfaat karena memberikan banyak pengetahuan
+                baru. Saya menjadi lebih memahami lingkungan
+                akademik, pemanfaatan AI, serta penggunaan Git
+                dan GitHub. Kegiatan ini juga memotivasi saya
+                untuk terus belajar dan mengembangkan kemampuan
+                di bidang teknologi.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Workshop Day 1 | Teknik Informatika PNJ</p>
+    </footer>
+
+    <script>
+        function tampilkanPesan() {
+            alert("Selamat datang di website Workshop Day 1!");
+        }
+    </script>
+
+</body>
+</html>
